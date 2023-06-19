@@ -80,6 +80,7 @@ const HomePage = () => {
       images: [
         { src: '/fam.jpg', alt: 'fam' },
         { src: '/tree.jpeg', alt: 'tree' },
+        { src: '/mountain.jpeg', alt: 'mountain' },
       ],
       text: 'Fam(ily) - we love you very much 😘',
     },
