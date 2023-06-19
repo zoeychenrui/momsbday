@@ -41,19 +41,16 @@ const ImageGroup = ({ images, text }) => {
       className="flex flex-col items-start mb-8"
     >
       <div className="flex mb-4">
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className="w-1/2 rounded-md mx-2 overflow-hidden"
-            style={{ aspectRatio: '1/1' }}
-          >
-            <img
-              src={image.src}
-              alt={image.alt}
-              className="object-cover w-full h-full rounded-md"
-            />
-          </div>
-        ))}
+      {images.map((image, index) => (
+        <div key={index} className="w-1/2 rounded-md mx-2 overflow-hidden">
+          <img
+            src={image.src}
+            alt={image.alt}
+            className="object-cover w-full h-auto rounded-md"
+            style={{ aspectRatio: '1/1', width: '100%', height: '100%' }}
+          />
+        </div>
+      ))}
       </div>
       <p className="text-black text-xl mx-auto mt-4">{text}</p>
     </motion.div>
